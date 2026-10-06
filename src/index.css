@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #13343B;
+  background: #F7FAFA;
+}
+
+/* Recharts tooltips look better without their default border */
+.recharts-default-tooltip {
+  border: 1px solid #D8E4E4 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 14px rgba(10, 46, 54, 0.08) !important;
+}
