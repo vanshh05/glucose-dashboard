@@ -2,8 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip, ReferenceLine } from "recharts";
 import { supabase, SessionOverview } from "../../lib/supabase";
-import { glucoseZone, formatRelative, fmtMgdl, zoneColor, zoneLabel } from "../../lib/patientUtils";
-
+import { glucoseZone, formatRelative, zoneColor, zoneLabel } from "../../lib/patientUtils";
 // For demo purposes we treat S007 as "the signed-in subject." A real app would
 // resolve this from an auth session; see note in the About page.
 const CURRENT_SUBJECT = "S007";
